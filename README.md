@@ -46,5 +46,3 @@ Interpreted as:
 There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns).
 If portfolio = $100,000
 Possible 1-day loss at 95% confidence ≈ $2,800
-
-That’s reasonable for simulated data with ~2% daily vol.
