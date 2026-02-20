@@ -7,10 +7,7 @@ Postgres, Kafka, Celery-ready workers, async execution, Alpaca adapter-ready, Gr
 cd infra
 docker compose up --build
 
-Frontend: http://localhost:3000
-
-Backend: http://localhost:8000  
-Frontend: http://localhost:3000 Grafana: http://localhost:3001  
+Frontend: http://localhost:3000   
 Backend: http://localhost:8000  
 Grafana: http://localhost:3001  
 
