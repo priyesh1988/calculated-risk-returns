@@ -47,7 +47,7 @@ Max per position = $50 \
 That’s your exposure cap. 
 
 3️⃣ "VaR": 0.017950 \
-This is Value at Risk (95%). \
+This is Value at Risk (95%). 
 -----------------------------------------------
 Interpreted as: There is a 5% chance of losing ~1.7% or more in one day. \
 -----------------------------------------------
