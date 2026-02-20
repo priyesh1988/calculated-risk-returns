@@ -26,6 +26,7 @@ GET /dashboard/extreme
 
 
 🔎 What Each Field Means
+
 1️⃣ "tier": "low" You’re using the Low Risk policy. 
 That means: Max 5% capital per position 
 
