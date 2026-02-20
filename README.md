@@ -22,4 +22,4 @@ GET /dashboard/medium
 Extreme Risk Dashboard  
 GET /dashboard/extreme
 
-<img width="1120" height="540" alt="Screenshot 2026-02-20 at 12 48 46" src="https://github.com/user-attachments/assets/a42e40c1-e35d-4978-92ec-7ad9dae69cdd" />
+<img width="1648" height="502" alt="Screenshot 2026-02-20 at 12 48 04" src="https://github.com/user-attachments/assets/2f7ffdab-f13b-4639-8940-4699961e5476" />
