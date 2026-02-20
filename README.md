@@ -8,6 +8,9 @@ cd infra
 docker compose up --build
 
 Frontend: http://localhost:3000
+
+Backend: http://localhost:8000  
+Frontend: http://localhost:3000 Grafana: http://localhost:3001  
 Backend: http://localhost:8000  
 Grafana: http://localhost:3001  
 
