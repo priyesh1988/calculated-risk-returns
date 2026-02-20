@@ -1,21 +1,80 @@
-version: '3.9'
 services:
+
   postgres:
     image: postgres:15
+    container_name: crr-postgres
     environment:
       POSTGRES_USER: crr
       POSTGRES_PASSWORD: crrpass
       POSTGRES_DB: crr
-  kafka:
-    image: bitnami/kafka:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   zookeeper:
-    image: bitnami/zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.6.1
+    container_name: crr-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    container_name: crr-kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+      KAFKA_LISTENERS: "PLAINTEXT://0.0.0.0:9092"
+      KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://localhost:9092"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
   redis:
     image: redis:7
+    container_name: crr-redis
+    ports:
+      - "6379:6379"
+
   backend:
     build: ../backend
-    depends_on: [postgres,kafka,redis]
-    ports: ["8000:8000"]
+    container_name: crr-backend
+    depends_on:
+      - postgres
+      - kafka
+      - redis
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://crr:crrpass@postgres:5432/crr
+      REDIS_URL: redis://redis:6379/0
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      ALPACA_KEY: ${ALPACA_KEY}
+      ALPACA_SECRET: ${ALPACA_SECRET}
+      ALPACA_BASE_URL: https://paper-api.alpaca.markets
+
+  frontend:
+    image: node:18
+    container_name: crr-frontend
+    working_dir: /app
+    volumes:
+      - ../frontend:/app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
   grafana:
     image: grafana/grafana:latest
-    ports: ["3001:3000"]
+    container_name: crr-grafana
+    ports:
+      - "3001:3000"
+
+volumes:
+  postgres_data:
