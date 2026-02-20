@@ -44,3 +44,6 @@ This is Value at Risk (95%). \
 Interpreted as: There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns). \
 If portfolio = $1,000 \
 Possible 1-day loss at 95% confidence ≈ $28
+
+VaR: The amount you could lose on a bad day, with high confidence.
+Expected Shortfall: If that bad day happens, how much you’ll likely lose on average.
