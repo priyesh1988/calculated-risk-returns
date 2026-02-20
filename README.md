@@ -45,3 +45,11 @@ Interpreted as: There is a 5% chance of losing ~2.8% or more in one day. \
 If portfolio = $1,000 \
 Possible 1-day loss at 95% confidence ≈ $28
 
+
+4️⃣ "ES_95": 0.02306 → 2.30%
+Expected Shortfall (Conditional VaR)
+Interpretation:
+If markets fall into that worst 5% scenario, the average loss is ~2.30%.
+If portfolio = $1000
+Tail-event average loss ≈ $23
+If markets fall badly, this is the average loss you can expect on those worst days.
