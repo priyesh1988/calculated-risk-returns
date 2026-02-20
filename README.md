@@ -8,7 +8,7 @@ Postgres, Kafka, Celery-ready workers, async execution, Alpaca adapter-ready, Gr
 cd infra \
 nano .env
 
-ALPACA_KEY=your_real_key_here
+ALPACA_KEY=your_real_key_here \
 ALPACA_SECRET=your_real_secret_here
 
 docker compose up --build
