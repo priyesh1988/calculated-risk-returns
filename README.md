@@ -30,13 +30,13 @@ GET /dashboard/extreme
 1️⃣ "tier": "low" You’re using the Low Risk policy. \
 That means: Max 5% capital per position 
 
-2️⃣ "max_position_pct": 0.05" 
-This means: Each position can use at most 5% of total portfolio capital. 
-If your portfolio = $1,000 
-Max per position = $50 
+2️⃣ "max_position_pct": 0.05" \
+This means: Each position can use at most 5% of total portfolio capital. \
+If your portfolio = $1,000 \
+Max per position = $50 \
 That’s your exposure cap. 
 
-3️⃣ "VaR": 0.027989 This is Value at Risk (95%). 
-Interpreted as: There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns). 
-If portfolio = $1,000 
+3️⃣ "VaR": 0.027989 This is Value at Risk (95%). \
+Interpreted as: There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns). \
+If portfolio = $1,000 \
 Possible 1-day loss at 95% confidence ≈ $28
