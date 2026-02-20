@@ -7,6 +7,12 @@ Postgres, Kafka, Celery-ready workers, async execution, Alpaca adapter-ready, Gr
 cd infra \
 docker compose up --build
 
+add infra/.env
+
+insert
+ALPACA_KEY="<ALPACA_KEY>"
+ALPACA_SECRET="<ALPACA_SECRET>"
+
 Frontend: http://localhost:3000   
 Backend: http://localhost:8000  
 Grafana: http://localhost:3001  
