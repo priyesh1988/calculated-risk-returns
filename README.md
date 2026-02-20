@@ -36,13 +36,13 @@ Lower volatility exposure
 2️⃣ "max_position_pct": 0.05
 This means:
 Each position can use at most 5% of total portfolio capital
-If your portfolio = $100,000
-Max per position = $5,000
+If your portfolio = $1,000
+Max per position = $50
 That’s your exposure cap.
 
 3️⃣ "VaR": 0.027989
 This is Value at Risk (95%)
 Interpreted as:
 There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns).
-If portfolio = $100,000
-Possible 1-day loss at 95% confidence ≈ $2,800
+If portfolio = $1,000
+Possible 1-day loss at 95% confidence ≈ $28
