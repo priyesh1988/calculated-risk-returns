@@ -58,5 +58,5 @@ Expected Shortfall (Conditional VaR) \
 Interpretation: \
 If markets fall into that worst 5% scenario, the average loss is ~2.15%. \
 If portfolio = $1000 \
-Tail-event average loss ≈ $21 \
+Tail-event(in the event of worst day) average loss ≈ $21 \
 If markets fall badly, this is the average loss you can expect on those worst days.
