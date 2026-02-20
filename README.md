@@ -39,17 +39,17 @@ If your portfolio = $1,000 \
 Max per position = $50 \
 That’s your exposure cap. 
 
-3️⃣ "VaR": 0.027989 \
+3️⃣ "VaR": 0.017950 \
 This is Value at Risk (95%). \
-Interpreted as: There is a 5% chance of losing ~2.8% or more in one day. \
+Interpreted as: There is a 5% chance of losing ~1.7% or more in one day. \
 If portfolio = $1,000 \
-Possible 1-day loss at 95% confidence ≈ $28
+Possible 1-day loss at 95% confidence ≈ $17
 
 
-4️⃣ "ES_95": 0.02306 → 2.30%
-Expected Shortfall (Conditional VaR)
-Interpretation:
-If markets fall into that worst 5% scenario, the average loss is ~2.30%.
-If portfolio = $1000
-Tail-event average loss ≈ $23
+4️⃣ "ES_95": 0.02155 → 2.15% \
+Expected Shortfall (Conditional VaR) \
+Interpretation: \
+If markets fall into that worst 5% scenario, the average loss is ~2.15%. \
+If portfolio = $1000 \
+Tail-event average loss ≈ $21 \
 If markets fall badly, this is the average loss you can expect on those worst days.
