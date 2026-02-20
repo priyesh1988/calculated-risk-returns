@@ -27,11 +27,11 @@ GET /dashboard/extreme
 🔎 What Each Field Means
 
 1️⃣ "tier": "low"
-You’re using the Low Risk policy.
-That means:
-Max 5% capital per position
-Tight risk limits
-Lower volatility exposure
+You’re using the Low Risk policy. 
+That means: 
+Max 5% capital per position 
+Tight risk limits 
+Lower volatility exposure 
 
 2️⃣ "max_position_pct": 0.05
 This means:
