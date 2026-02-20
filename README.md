@@ -41,7 +41,7 @@ That’s your exposure cap.
 
 3️⃣ "VaR": 0.027989 \
 This is Value at Risk (95%). \
-Interpreted as: There is a 5% chance of losing ~2.8% or more in one day (based on the simulated returns). \
+Interpreted as: There is a 5% chance of losing ~2.8% or more in one day. \
 If portfolio = $1,000 \
 Possible 1-day loss at 95% confidence ≈ $28
 
