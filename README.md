@@ -4,14 +4,16 @@ End‑to‑end deployment with:
 Postgres, Kafka, Celery-ready workers, async execution, Alpaca adapter-ready, Grafana, Helm, CI/CD, zero‑trust auth ready.
 
 ## Run (Full Stack)
-cd infra \
-docker compose up --build
 
 add infra/.env
 
 insert
 ALPACA_KEY="<ALPACA_KEY>"
 ALPACA_SECRET="<ALPACA_SECRET>"
+
+cd infra \
+docker compose up --build
+
 
 Frontend: http://localhost:3000   
 Backend: http://localhost:8000  
