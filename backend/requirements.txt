@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+aiokafka
+celery
+redis
+pydantic
+numpy
+pandas
+scipy
+python-jose[cryptography]
+passlib[bcrypt]
+prometheus-client
+alpaca-trade-api

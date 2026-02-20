@@ -1,0 +1,4 @@
+replicaCount: 1
+image:
+  repository: calculated-risk-returns-backend
+  tag: latest
